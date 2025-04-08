@@ -8,8 +8,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>GS 749</p>
-    <p>1040 4th St, </p>
+    <p>749 Gould Simpson</p>
+    <p>1040 4th St</p>
     <p>Tucson, AZ 85721</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -28,6 +28,4 @@ latest_posts:
 
 I am a third-year PhD student at the University of Arizona, broadly interested in Networks, Measurement, and Security. My current research focuses on the Network Time Protocol (NTP). Previously, I worked on Stylometry, where I explored the various factors that influence the performance of binary stylometry techniques. I have also developed a scalable source code framework for Program Debloating and conducted a Systematization of Knowledge (SoK) study on state-of-the-art debloating methods.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Outside of work, I enjoy playing chess, particularly blitz. My peak blitz rating on chess.com was around 2370, and I’ve reached a USCF rating above 2000, which qualifies as USCF Expert.
