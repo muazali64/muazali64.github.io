@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2025-02-01 15:59:00-0400
 inline: true
 related_posts: false
 ---
 
-A simple inline announcement.
+Our work on Binary Stylometry is accepted to PETS 2025 (with 3% early accept rate).
