@@ -7,10 +7,6 @@ profile:
   align: right
   image: profile.png
   image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>749 Gould Simpson</p>
-    <p>1040 4th St</p>
-    <p>Tucson, AZ 85721</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
