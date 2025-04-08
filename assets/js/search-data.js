@@ -384,7 +384,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather/";
-            },},{id: "news-our-work-on-binary-stylometry-is-accepted-to-pets-2025-with-3-early-accept-rate",
+            },},{id: "news-our-work-on-program-debloating-is-accepted-to-esorics-2023-with-18-accept-rate",
+          title: 'Our work on Program Debloating is accepted to ESORICS 2023 (with 18% accept...',
+          description: "",
+          section: "News",},{id: "news-our-work-on-binary-stylometry-is-accepted-to-pets-2025-with-3-early-accept-rate",
           title: 'Our work on Binary Stylometry is accepted to PETS 2025 (with 3% early...',
           description: "",
           section: "News",},{id: "projects-project-1",
