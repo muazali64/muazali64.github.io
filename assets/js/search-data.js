@@ -393,7 +393,7 @@ ninja.data = [{
           section: "News",},{id: "news-our-work-on-explainable-legal-wills-execution-using-llms-has-been-accepted-for-presentation-to-the-bloomberg-law-symposium-law-language-and-ai-2025-i-will-be-presenting-along-with-my-co-author-alice-kwak",
           title: 'Our work on Explainable Legal Wills Execution using LLMs has been accepted for...',
           description: "",
-          section: "News",},{id: "news-i-am-awarded-the-outstanding-graduate-scholarship-award-by-the-computer-science-department-at-the-university-of-arizona-this-award-is-given-annually-to-one-graduate-student-in-computer-science-for-exceptional-scholarly-achievements-based-on-research-impact-innovation-and-academic-excellence",
+          section: "News",},{id: "news-i-am-awarded-the-outstanding-graduate-scholarship-award-by-the-computer-science-department-at-the-university-of-arizona-this-award-is-given-annually-to-one-graduate-student-in-computer-science-for-exceptional-scholarly-and-research-achievements",
           title: 'I am awarded the Outstanding Graduate Scholarship Award by the Computer Science Department...',
           description: "",
           section: "News",},{id: "projects-project-1",
