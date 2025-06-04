@@ -5,5 +5,5 @@ inline: true
 related_posts: false
 ---
 
-Our work on Explainable Legal Wills Execution using LLMs has been accepted for presentation to the [Bloomberg Law Symposium](https://pro.bloomberglaw.com/ai-symposium/): *Law, Language, and AI*, 2025. I will be presenting along with my co-author, Alice Kwak.
+Our work on Explainable Legal Wills Execution using LLMs has been accepted for presentation to the [Bloomberg Law Symposium](https://pro.bloomberglaw.com/ai-symposium/): *Law, Language, and AI*, 2025. I will be attending with my co-author, Alice Kwak.
 

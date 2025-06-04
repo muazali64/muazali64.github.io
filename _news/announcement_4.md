@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I am awarded the **Outstanding Graduate Scholarship Award**, given annually to one graduate student in Computer Science Department for exceptional scholarly and research achievements.
+Received the **Outstanding Graduate Scholarship Award**, given annually for research excellence in the Computer Science Department.
