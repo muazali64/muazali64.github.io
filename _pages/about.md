@@ -22,20 +22,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD student at the University of Arizona, broadly interested in Networks, Systems, Security, and Explainable AI. My research spans several projects:
+I’m a PhD student at the University of Arizona, broadly interested in Networks and Security. My recent work includes projects on network time synchronization, binary code authorship analysis, software debloating, and the application of AI in legal contexts.
 
-- **Network Time Protocol (NTP) Analysis**  
-  Ongoing work on Measurement and security analysis of the global NTP Pool infrastructure. 
+Outside of work, I enjoy playing chess, particularly blitz. My peak blitz rating on Chess.com is around 2370, and I’ve achieved a USCF rating above 2000, which qualifies as USCF Expert.
 
-- **Binary Stylometry and Attribution**  
-  Investigated the factors influencing the performance of a SOTA binary code authorship attribution technqiue.  
-  *[Paper at PETS 2025](https://doi.org/10.56553/popets-2025-0102)*
-
-- **Debloating**  
-  Designed [BLADE](https://doi.ieeecomputersociety.org/10.1109/SecDev56634.2023.00022), a scalable source code debloating framework ([SecDev 2023](https://ieeexplore.ieee.org/document/10305561)), and conducted a [Systematization of Knowledge on debloating methods](https://doi.org/10.1007/978-3-031-51482-1_12) presented at [ESORICS 2023](https://link.springer.com/chapter/10.1007/978-3-031-51482-1_12).
-
-- **Explainable Legal Reasoning with LLMs**  
-  Developed methods for infering and executing legal wills using LLMs, with a focus on transparency and traceability.  
-  This work was accepted for presentation to the [Bloomberg Law Symposium: Law, Language, and AI (2025)](https://pro.bloomberglaw.com/ai-symposium/#overview).
-
-Outside of work, I enjoy playing chess, particularly blitz. My peak blitz rating on chess.com was around 2370, and I’ve reached a USCF rating above 2000, which qualifies as USCF Expert.
