@@ -22,7 +22,7 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I’m a PhD student at the University of Arizona, broadly interested in Networks and Security. My recent work includes projects on network time synchronization, binary code authorship analysis, software debloating, and the application of AI in legal contexts.
+I’m a PhD student at the University of Arizona, broadly interested in Networks and Security. My recent work includes projects on LEO Networks, binary code authorship analysis, software debloating, and the application of AI in legal contexts.
 
 Outside of work, I enjoy playing chess, particularly blitz. My peak blitz rating on Chess.com is around 2370, and I’ve achieved a USCF rating above 2000, which qualifies as USCF Expert.
 
