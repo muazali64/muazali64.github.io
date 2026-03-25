@@ -7,3 +7,22 @@
 
 "Vision":
   color: "#009f36"
+
+"arXiv'26":
+  color: "#800080"   # purple
+
+"IEEE SecDev'23":
+  color: "#800080"
+
+"ESORICS'23":
+  color: "#800080"
+
+"PETS'25":
+  color: "#800080"
+
+"NINeS'26":
+  color: "#800080"
+
+"Euro S&P'26":
+  color: "#800080"
+
