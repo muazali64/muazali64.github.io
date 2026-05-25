@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://pawnsac.github.io/sitemap.xml
+Sitemap: https://muazali64.github.io/sitemap.xml
