@@ -9,15 +9,18 @@
   color: "#009f36"
 
 "arXiv'26":
-  color: "#800080"   # purple
+  color: "#800080" # purple
 
 "IEEE SecDev'23":
+  url: https://secdev.ieee.org/2023/home/
   color: "#800080"
 
 "ESORICS'23":
+  url: https://www.esorics2023.org/
   color: "#800080"
 
 "PETS'25":
+  url: https://petsymposium.org/2025/
   color: "#800080"
 
 "NINeS'26":
@@ -26,3 +29,6 @@
 "Euro S&P'26":
   color: "#800080"
 
+"SIGMETRICS'27":
+  url: https://www.sigmetrics.org/sigmetrics2027/
+  color: "#800080"

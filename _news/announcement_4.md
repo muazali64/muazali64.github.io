@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Received the **Outstanding Graduate Scholarship Award**, given annually for research excellence in the Computer Science Department.
+I received the **Outstanding Graduate Scholarship Award**, given annually for research excellence in the Computer Science Department.

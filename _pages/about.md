@@ -2,6 +2,12 @@
 layout: about
 title: about
 permalink: /
+subtitle: PhD candidate · Computer Science · University of Arizona
+interests:
+  - Satellite Networks
+  - AI Safety
+  - Internet Measurement
+  - System Design
 
 profile:
   align: right
@@ -22,6 +28,6 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I’m a PhD student at the University of Arizona, broadly interested in Networks and Security. My recent work includes projects on LEO Networks, binary code authorship analysis, software debloating, and the application of AI in legal contexts.
+I'm a PhD candidate in computer science at the University of Arizona, advised by [Beichuan Zhang](https://www2.cs.arizona.edu/~bzhang/). My research focuses on understanding how systems behave in practice and using that understanding to make them more robust. I combine measurement and experimental evaluation to uncover fragile assumptions, then design around the constraints that real deployments impose.
 
-Outside of work, I enjoy playing chess, especially blitz. My peak Chess.com blitz rating is above 2400, and I hold a USCF rating above 2000 (USCF Expert title).
+Outside research, I enjoy blitz chess. My peak Chess.com blitz rating is over 2400, and I'm a USCF Expert rated above 2000.

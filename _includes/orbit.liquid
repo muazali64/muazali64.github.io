@@ -1,0 +1,16 @@
+{% comment %}
+  Decorative network/orbit motif drawn behind the portrait. Pure SVG, no script.
+  Colours come from the .orbit__* classes in _sass/_modern.scss.
+{% endcomment %}
+<svg class="orbit" viewBox="0 0 400 500" aria-hidden="true" focusable="false">
+  <ellipse class="orbit__ring" cx="200" cy="250" rx="196" ry="86" transform="rotate(-28 200 250)"/>
+  <ellipse class="orbit__ring" cx="200" cy="250" rx="150" ry="236" transform="rotate(18 200 250)"/>
+  <line class="orbit__link" x1="28" y1="372" x2="318" y2="82"/>
+  <line class="orbit__link" x1="318" y1="82" x2="372" y2="410"/>
+  <line class="orbit__link" x1="28" y1="372" x2="372" y2="410"/>
+  <circle class="orbit__node" cx="318" cy="82" r="6"/>
+  <circle class="orbit__node" cx="28" cy="372" r="6"/>
+  <circle class="orbit__node orbit__node--ink" cx="372" cy="410" r="4"/>
+  <circle class="orbit__node orbit__node--ink" cx="96" cy="58" r="3"/>
+  <circle class="orbit__node orbit__node--ink" cx="150" cy="476" r="3"/>
+</svg>

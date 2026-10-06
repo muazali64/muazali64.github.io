@@ -1,51 +1,102 @@
 /*******************************************************************************
- * Themes
+ * Themes: "Signal" design tokens
+ *
+ * Every colour in the site comes from a CSS custom property declared here, so
+ * changing a value in this file re-themes the whole site. The legacy
+ * `--global-*` names are kept (the blog, CV and Distill layouts still use
+ * them) and are mapped onto the new palette; the `--ds-*` names are the new
+ * design tokens used by _modern.scss.
  ******************************************************************************/
 
 @use "sass:color";
 
+// Crimson & ivory — light palette
+$paper: #fcf8f4;
+$paper-raised: #fcf8f4;
+$ink: #302126;
+$ink-muted: #766166;
+$signal: #a51d3d;
+$signal-soft: #f5e5e9;
+$rule: #e8d6da;
+
+// Crimson & ivory — dark palette
+$night: #21161c;
+$night-raised: #21161c;
+$night-ink: #f5e9ed;
+$night-muted: #c7acb7;
+$night-signal: #ef9db2;
+$night-signal-soft: #40212d;
+$night-rule: #603341;
+
 :root {
   color-scheme: light;
-  --global-bg-color: #{$white-color};
-  --global-code-bg-color: #{$code-bg-color-light};
-  --global-text-color: #{$black-color};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$purple-color};
-  --global-hover-color: #{$purple-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-dark};
-  --global-footer-text-color: #{$grey-color-light};
-  --global-footer-link-color: #{$white-color};
-  --global-distill-app-color: #{$grey-color};
-  --global-divider-color: rgba(0, 0, 0, 0.1);
-  --global-card-bg-color: #{$white-color};
-  --global-highlight-color: #{$red-color-dark};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($black-color, "red", $space: rgb)},
-    #{color.channel($black-color, "green", $space: rgb)},
-    #{color.channel($black-color, "blue", $space: rgb)},
-    0.4
-  );
-  --global-back-to-top-text-color: #{$white-color};
-  --global-newsletter-bg-color: #{$white-color};
-  --global-newsletter-text-color: #{$black-color};
 
-  --global-tip-block: #42b983;
-  --global-tip-block-bg: #e2f5ec;
-  --global-tip-block-text: #215d42;
-  --global-tip-block-title: #359469;
-  --global-warning-block: #e7c000;
-  --global-warning-block-bg: #fff8d8;
-  --global-warning-block-text: #6b5900;
-  --global-warning-block-title: #b29400;
+  // --- New design tokens -----------------------------------------------------
+  --ds-bg: #{$paper};
+  --ds-surface: #{$paper-raised};
+  --ds-ink: #{$ink};
+  --ds-muted: #{$ink-muted};
+  --ds-accent: #{$signal};
+  --ds-accent-ink: #ffffff;
+  --ds-accent-soft: #{$signal-soft};
+  --ds-rule: #{$rule};
+
+  --ds-font-display: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ds-font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --ds-font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  --ds-space-1: 4px;
+  --ds-space-2: 8px;
+  --ds-space-3: 12px;
+  --ds-space-4: 16px;
+  --ds-space-5: 24px;
+  --ds-space-6: 32px;
+  --ds-space-7: 48px;
+  --ds-space-8: 72px;
+  --ds-space-9: 112px;
+
+  --ds-radius-sm: 6px;
+  --ds-radius-md: 12px;
+  --ds-radius-lg: 20px;
+  --ds-radius-pill: 999px;
+
+  --ds-measure: 38rem;
+  --ds-page: 64rem;
+
+  // --- Legacy tokens (mapped onto the new palette) ---------------------------
+  --global-bg-color: var(--ds-bg);
+  --global-code-bg-color: #{rgba($ink, 0.06)};
+  --global-text-color: var(--ds-ink);
+  --global-text-color-light: var(--ds-muted);
+  --global-theme-color: var(--ds-accent);
+  --global-hover-color: var(--ds-accent);
+  --global-hover-text-color: var(--ds-accent-ink);
+  --global-footer-bg-color: transparent;
+  --global-footer-text-color: var(--ds-muted);
+  --global-footer-link-color: var(--ds-ink);
+  --global-distill-app-color: var(--ds-muted);
+  --global-divider-color: var(--ds-rule);
+  --global-card-bg-color: var(--ds-surface);
+  --global-highlight-color: var(--ds-accent);
+  --global-back-to-top-bg-color: #{rgba($ink, 0.85)};
+  --global-back-to-top-text-color: #{$paper};
+  --global-newsletter-bg-color: var(--ds-surface);
+  --global-newsletter-text-color: var(--ds-ink);
+
+  --global-tip-block: #2f8f63;
+  --global-tip-block-bg: #e2f2ea;
+  --global-tip-block-text: #1f553d;
+  --global-tip-block-title: #277350;
+  --global-warning-block: #c99a00;
+  --global-warning-block-bg: #fff6d1;
+  --global-warning-block-text: #5e4c00;
+  --global-warning-block-title: #8f7300;
   --global-danger-block: #c00;
   --global-danger-block-bg: #ffe0e0;
   --global-danger-block-text: #600;
   --global-danger-block-title: #c00;
 
   #light-toggle-system {
-    padding-left: 10px;
-    padding-top: 12px;
     display: block;
   }
 
@@ -78,28 +129,19 @@
 
 html[data-theme="dark"] {
   color-scheme: dark;
-  --global-bg-color: #{$grey-color-dark};
-  --global-code-bg-color: #{$code-bg-color-dark};
-  --global-text-color: #{$grey-color-light};
-  --global-text-color-light: #{$grey-color};
-  --global-theme-color: #{$cyan-color};
-  --global-hover-color: #{$cyan-color};
-  --global-hover-text-color: #{$white-color};
-  --global-footer-bg-color: #{$grey-color-light};
-  --global-footer-text-color: #{$grey-color-dark};
-  --global-footer-link-color: #{$black-color};
-  --global-distill-app-color: #{$grey-color-light};
-  --global-divider-color: #424246;
-  --global-card-bg-color: #{$grey-900};
-  --global-back-to-top-bg-color: rgba(
-    #{color.channel($white-color, "red", $space: rgb)},
-    #{color.channel($white-color, "green", $space: rgb)},
-    #{color.channel($white-color, "blue", $space: rgb)},
-    0.5
-  );
-  --global-back-to-top-text-color: #{$black-color};
-  --global-newsletter-bg-color: #{$grey-color-light};
-  --global-newsletter-text-color: #{$grey-color-dark};
+
+  --ds-bg: #{$night};
+  --ds-surface: #{$night-raised};
+  --ds-ink: #{$night-ink};
+  --ds-muted: #{$night-muted};
+  --ds-accent: #{$night-signal};
+  --ds-accent-ink: #{$night};
+  --ds-accent-soft: #{$night-signal-soft};
+  --ds-rule: #{$night-rule};
+
+  --global-code-bg-color: #{rgba($night-ink, 0.08)};
+  --global-back-to-top-bg-color: #{rgba($night-ink, 0.85)};
+  --global-back-to-top-text-color: #{$night};
 
   --global-tip-block: #42b983;
   --global-tip-block-bg: #e2f5ec;
@@ -129,18 +171,11 @@ html[data-theme-setting="dark"] {
   }
 
   #light-toggle-dark {
-    padding-left: 10px;
-    padding-top: 12px;
     display: block;
   }
 
   #light-toggle-light {
     display: none;
-  }
-
-  #back-to-top {
-    color: var(--global-back-to-top-text-color);
-    background: var(--global-back-to-top-bg-color);
   }
 }
 
@@ -154,8 +189,6 @@ html[data-theme-setting="light"] {
   }
 
   #light-toggle-light {
-    padding-left: 10px;
-    padding-top: 12px;
     display: block;
   }
 }

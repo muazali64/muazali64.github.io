@@ -1,80 +1,91 @@
 ---
 layout: default
 ---
-<div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
+<div class="home">
+  <section class="hero">
+    <div class="hero__copy">
+      {% if page.subtitle %}
+        <p class="hero__eyebrow">{{ page.subtitle }}</p>
       {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
-          {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
-          {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
-          {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
-          {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
-          {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
-          %}
+      <h1 class="hero__name">
+        {% if site.title == 'blank' %}
+          {{ site.first_name }}
+          {% if site.middle_name %}{{ site.middle_name }} {% endif -%}
+          <em>{{ site.last_name }}</em>
+        {% else %}
+          {{ site.title }}
         {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
-      </div>
+      </h1>
+
+      <div class="hero__bio">{{ content }}</div>
+
+      {% if page.interests %}
+        <div class="hero__interests">
+          <p class="hero__label">Research interests</p>
+          <ol>
+            {% for interest in page.interests %}
+              <li>{{ interest }}</li>
+            {% endfor %}
+          </ol>
+        </div>
+      {% endif %}
+
+      {% if site.contact_note %}
+        <p class="hero__note">{{ site.contact_note | strip }}</p>
+      {% endif %}
+
+      {% if page.social %}
+        <div class="hero__links">{% include social.liquid %}</div>
+      {% endif %}
+    </div>
+
+    {% if page.profile and page.profile.image %}
+      <figure class="hero__figure">
+        {% include orbit.liquid %}
+        {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
+        {%
+          include figure.liquid loading="eager" path=profile_image_path class="profile-image" sizes="(min-width: 832px) 30vw, 70vw" alt=site.first_name
+          cache_bust=true
+        %}
+      </figure>
     {% endif %}
+  </section>
 
-    <div class="clearfix">{{ content }}</div>
-
-    <!-- News -->
-    {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
+  {% if page.selected_papers %}
+    <section class="section" aria-labelledby="papers-heading">
+      <header class="section__head">
+        <span class="section__index">01</span>
+        <h2 id="papers-heading">Selected publications</h2>
+        <a class="section__more" href="{{ '/publications/' | relative_url }}">all publications &rarr;</a>
+      </header>
       {% include selected_papers.liquid %}
-    {% endif %}
+    </section>
+  {% endif %}
 
-    <!-- Social -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
+  {% if page.latest_posts and page.latest_posts.enabled %}
+    <section class="section" aria-labelledby="posts-heading">
+      <header class="section__head">
+        <span class="section__index">02</span>
+        <h2 id="posts-heading">Latest posts</h2>
+        <a class="section__more" href="{{ '/blog/' | relative_url }}">all posts &rarr;</a>
+      </header>
+      {% include latest_posts.liquid %}
+    </section>
+  {% endif %}
 
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
+  {% if page.announcements and page.announcements.enabled %}
+    <section class="section" aria-labelledby="news-heading">
+      <header class="section__head">
+        <span class="section__index">02</span>
+        <h2 id="news-heading">News</h2>
+        <a class="section__more" href="{{ '/news/' | relative_url }}">all news &rarr;</a>
+      </header>
+      {% include news.liquid limit=true %}
+    </section>
+  {% endif %}
 
-    {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
-      {% include newsletter.liquid center=true %}
-    {% endif %}
-  </article>
+  {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}
+    {% include newsletter.liquid center=true %}
+  {% endif %}
 </div>

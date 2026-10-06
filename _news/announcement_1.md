@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our work on Binary Stylometry is accepted to PETS 2025 (with 3% early accept rate).
+Our work on binary code stylometry was accepted to [PETS 2025](https://petsymposium.org/2025/) (3% early acceptance rate).
