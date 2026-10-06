@@ -311,6 +311,8 @@ filtered_bibtex_keywords:
     bibtex_show,
     blog,
     code,
+    first_author,
+    peer_reviewed,
     google_scholar_id,
     html,
     inspirehep_id,
