@@ -496,46 +496,6 @@ hr {
 
 // --- Publications ------------------------------------------------------------
 
-.publication-summary {
-  margin-bottom: var(--ds-space-5);
-
-  p {
-    margin: var(--ds-space-2) 0 0;
-    color: var(--ds-muted);
-    font-size: 0.75rem;
-  }
-}
-
-.publication-counts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--ds-space-4) var(--ds-space-6);
-  margin: 0;
-  padding: var(--ds-space-3) 0;
-  border-top: 1px solid var(--ds-rule);
-  border-bottom: 1px solid var(--ds-rule);
-
-  > div {
-    display: flex;
-    align-items: baseline;
-    gap: var(--ds-space-2);
-  }
-
-  dt {
-    font-size: 0.8125rem;
-    font-weight: 400;
-    color: var(--ds-muted);
-  }
-
-  dd {
-    margin: 0;
-    font-size: 1.375rem;
-    font-weight: 600;
-    font-variant-numeric: tabular-nums;
-    color: var(--ds-accent);
-  }
-}
-
 .publications {
   margin-top: 0;
 
