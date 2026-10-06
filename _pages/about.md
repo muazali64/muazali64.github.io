@@ -5,9 +5,9 @@ permalink: /
 subtitle: PhD candidate · Computer Science · University of Arizona
 interests:
   - Satellite Networks
+  - System Design
   - AI Safety
   - Internet Measurement
-  - System Design
 
 profile:
   align: right
