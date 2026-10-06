@@ -361,13 +361,21 @@ hr {
     margin: 0;
     padding: var(--ds-space-6);
 
+    > figure {
+      margin: 0;
+      overflow: hidden;
+      border-radius: var(--ds-radius-lg);
+    }
+
     img {
       position: relative;
       display: block;
       width: 100%;
       aspect-ratio: 4 / 5;
+      transform: scale(2.3);
+      transform-origin: 50% 57%;
       object-fit: cover;
-      object-position: 54% 20%;
+      object-position: 50% 70%;
       border-radius: var(--ds-radius-lg);
       box-shadow: none !important;
     }
