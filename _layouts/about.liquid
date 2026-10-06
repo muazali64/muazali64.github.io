@@ -31,6 +31,10 @@ layout: default
         </div>
       {% endif %}
 
+      {% if page.personal_note %}
+        <div class="hero__bio">{{ page.personal_note | markdownify }}</div>
+      {% endif %}
+
       {% if site.contact_note %}
         <p class="hero__note">{{ site.contact_note | strip }}</p>
       {% endif %}
