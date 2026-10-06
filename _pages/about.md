@@ -30,4 +30,4 @@ latest_posts:
 
 I'm a PhD candidate in computer science at the University of Arizona, advised by [Beichuan Zhang](https://www2.cs.arizona.edu/~bzhang/). My research focuses on understanding how systems behave in practice and using that understanding to make them more robust. I combine measurement and experimental evaluation to uncover fragile assumptions, then design around the constraints that real deployments impose.
 
-Outside research, I enjoy blitz chess. My peak Chess.com blitz rating is over 2400, and I'm a USCF Expert rated above 2000.
+Outside of research, I enjoy playing chess. My peak Chess.com blitz rating is over 2400, and I'm a USCF Expert rated above 2000.
