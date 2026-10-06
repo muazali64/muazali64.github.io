@@ -850,6 +850,7 @@ video {
 
 @media (max-width: 30rem) {
   .site-header__inner {
+    flex-wrap: wrap;
     padding-left: var(--ds-space-4);
     padding-right: var(--ds-space-4);
     gap: var(--ds-space-3);
