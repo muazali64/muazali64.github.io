@@ -31,4 +31,4 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I'm a PhD candidate in computer science at the University of Arizona, advised by [Beichuan Zhang](https://www2.cs.arizona.edu/~bzhang/). My research focuses on understanding how network systems behave in practice and using that understanding to make them more robust. I combine measurement and experimental evaluation to uncover fragile assumptions, then design around the constraints that real deployments impose.
+I'm a PhD candidate in computer science at the University of Arizona. My research focuses on understanding how network systems behave in practice and using that understanding to make them more robust. I combine measurement and experimental evaluation to uncover fragile assumptions, then design around the constraints that real deployments impose.
